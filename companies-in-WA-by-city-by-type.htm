@@ -1,0 +1,1799 @@
+<style>
+    :root {
+      --malloy-font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      --malloy-title-color: #cccccc;
+      --malloy-label-color: #ffffff;
+      --malloy-border-color: #2b2b2b;
+      --malloy-tile-background-color: #1f1f1f;
+    }
+    body {
+      color: #cccccc;
+      background: #1f1f1f;
+      font-family: var(--malloy-font-family);
+      font-size: 11px;
+    }
+    table {
+      font-size: 11px;
+    }
+  </style>
+  <table style="border-top-color: ; border-top-style: ; border-top-width: ; border-right-color: ; border-right-style: ; border-right-width: ; border-left-color: ; border-left-style: ; border-left-width: ; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); border-collapse: collapse; width: 100%;"><thead><tr><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">stprba</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">by_​city</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px;"></th></tr></thead><tbody><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>WA</span></td><td style="padding: 0px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><table style="border-top-color: ; border-top-style: ; border-top-width: ; border-right-color: ; border-right-style: ; border-right-width: ; border-left-color: ; border-left-style: ; border-left-width: ; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); border-collapse: collapse; width: 100%;"><thead><tr><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">cityba</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: right;">num_​cos</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">by_​co</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px;"></th></tr></thead><tbody><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>SEATTLE</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: right;"><span>45</span></td><td style="padding: 0px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><table style="border-top-color: ; border-top-style: ; border-top-width: ; border-right-color: ; border-right-style: ; border-right-width: ; border-left-color: ; border-left-style: ; border-left-width: ; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); border-collapse: collapse; width: 100%;"><thead><tr><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">afs</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">name</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px;"></th></tr></thead><tbody><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>WASHINGTON FEDERAL INC</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>OMEROS CORP</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>STARBUCKS CORP</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>ATOSSA THERAPEUTICS, INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>EXPEDITORS INTERNATIONAL OF WASHINGTON INC</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>TRUPANION, INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>BOEING CO</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>BROADMARK REALTY CAPITAL INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>F5, INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>WEYERHAEUSER CO</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>AVALARA, INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>ADAPTIVE BIOTECHNOLOGIES CORP</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>PORCH GROUP, INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>ZILLOW GROUP, INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>EXPEDIA GROUP, INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>NANOSTRING TECHNOLOGIES INC</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr></tbody></table></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>BELLEVUE</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: right;"><span>11</span></td><td style="padding: 0px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><table style="border-top-color: ; border-top-style: ; border-top-width: ; border-right-color: ; border-right-style: ; border-right-width: ; border-left-color: ; border-left-style: ; border-left-width: ; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); border-collapse: collapse; width: 100%;"><thead><tr><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">afs</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">name</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px;"></th></tr></thead><tbody><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>SMARTSHEET INC</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>T-MOBILE US, INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>PACCAR INC</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>PACCAR FINANCIAL CORP</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>LIMEADE, INC</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>NOVO INTEGRATED SCIENCES, INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>BSQUARE CORP /WA</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>ICAP VAULT 1, LLC</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>TRAQIQ, INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>PUGET ENERGY INC /WA</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span class="value-null">∅</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>PUGET SOUND ENERGY INC</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span class="value-null">∅</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>LIMEADE, INC</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr></tbody></table></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>VANCOUVER</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: right;"><span>6</span></td><td style="padding: 0px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><table style="border-top-color: ; border-top-style: ; border-top-width: ; border-right-color: ; border-right-style: ; border-right-width: ; border-left-color: ; border-left-style: ; border-left-width: ; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); border-collapse: collapse; width: 100%;"><thead><tr><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">afs</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">name</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px;"></th></tr></thead><tbody><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>CYTODYN INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>2-ACC</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>NORTHWEST PIPE CO</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>2-ACC</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>NAUTILUS, INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>2-ACC</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>BARRETT BUSINESS SERVICES INC</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>ABSCI CORP</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>RIVERVIEW BANCORP INC</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr></tbody></table></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>REDMOND</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: right;"><span>6</span></td><td style="padding: 0px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><table style="border-top-color: ; border-top-style: ; border-top-width: ; border-right-color: ; border-right-style: ; border-right-width: ; border-left-color: ; border-left-style: ; border-left-width: ; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); border-collapse: collapse; width: 100%;"><thead><tr><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">afs</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">name</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px;"></th></tr></thead><tbody><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>MICROVISION, INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>MICROSOFT CORP</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>HOUR LOOP, INC</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>ELIEM THERAPEUTICS, INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>PAYMENTUS HOLDINGS, INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>MICROVISION, INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>DATA I/O CORP</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr></tbody></table></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>SPOKANE</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: right;"><span>6</span></td><td style="padding: 0px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><table style="border-top-color: ; border-top-style: ; border-top-width: ; border-right-color: ; border-right-style: ; border-right-width: ; border-left-color: ; border-left-style: ; border-left-width: ; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); border-collapse: collapse; width: 100%;"><thead><tr><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">afs</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">name</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px;"></th></tr></thead><tbody><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>AVISTA CORP</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>POTLATCHDELTIC CORP</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>2-ACC</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>CLEARWATER PAPER CORP</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>2-ACC</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>KEY TRONIC CORP</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>KASPIEN HOLDINGS INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>GOLDRICH MINING CO</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr></tbody></table></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>EVERETT</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: right;"><span>3</span></td><td style="padding: 0px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><table style="border-top-color: ; border-top-style: ; border-top-width: ; border-right-color: ; border-right-style: ; border-right-width: ; border-left-color: ; border-left-style: ; border-left-width: ; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); border-collapse: collapse; width: 100%;"><thead><tr><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">afs</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">name</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px;"></th></tr></thead><tbody><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>FORTIVE CORP</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>2-ACC</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>FUNKO, INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>COASTAL FINANCIAL CORP</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr></tbody></table></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>KIRKLAND</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: right;"><span>3</span></td><td style="padding: 0px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><table style="border-top-color: ; border-top-style: ; border-top-width: ; border-right-color: ; border-right-style: ; border-right-width: ; border-left-color: ; border-left-style: ; border-left-width: ; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); border-collapse: collapse; width: 100%;"><thead><tr><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">afs</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">name</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px;"></th></tr></thead><tbody><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>MONOLITHIC POWER SYSTEMS INC</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>COLICITY INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>GROWLIFE, INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr></tbody></table></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>RICHLAND</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: right;"><span>3</span></td><td style="padding: 0px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><table style="border-top-color: ; border-top-style: ; border-top-width: ; border-right-color: ; border-right-style: ; border-right-width: ; border-left-color: ; border-left-style: ; border-left-width: ; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); border-collapse: collapse; width: 100%;"><thead><tr><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">afs</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">name</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px;"></th></tr></thead><tbody><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>GLOBESTAR THERAPEUTICS CORP</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>VIVOS INC</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>ISORAY, INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr></tbody></table></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>BOTHELL</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: right;"><span>3</span></td><td style="padding: 0px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><table style="border-top-color: ; border-top-style: ; border-top-width: ; border-right-color: ; border-right-style: ; border-right-width: ; border-left-color: ; border-left-style: ; border-left-width: ; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); border-collapse: collapse; width: 100%;"><thead><tr><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">afs</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">name</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px;"></th></tr></thead><tbody><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>SEAGEN INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>BIOLIFE SOLUTIONS INC</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>COCRYSTAL PHARMA, INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>BIOLIFE SOLUTIONS INC</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr></tbody></table></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>WOODINVILLE</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: right;"><span>2</span></td><td style="padding: 0px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><table style="border-top-color: ; border-top-style: ; border-top-width: ; border-right-color: ; border-right-style: ; border-right-width: ; border-left-color: ; border-left-style: ; border-left-width: ; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); border-collapse: collapse; width: 100%;"><thead><tr><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">afs</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">name</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px;"></th></tr></thead><tbody><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>DEEP GREEN WASTE &amp; RECYCLING, INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>CARBONMETA TECHNOLOGIES, INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr></tbody></table></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>TACOMA</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: right;"><span>2</span></td><td style="padding: 0px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><table style="border-top-color: ; border-top-style: ; border-top-width: ; border-right-color: ; border-right-style: ; border-right-width: ; border-left-color: ; border-left-style: ; border-left-width: ; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); border-collapse: collapse; width: 100%;"><thead><tr><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">afs</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">name</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px;"></th></tr></thead><tbody><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>TRUEBLUE, INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>COLUMBIA BANKING SYSTEM, INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>2-ACC</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>TRUEBLUE, INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr></tbody></table></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>SPOKANE VALLEY</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: right;"><span>2</span></td><td style="padding: 0px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><table style="border-top-color: ; border-top-style: ; border-top-width: ; border-right-color: ; border-right-style: ; border-right-width: ; border-left-color: ; border-left-style: ; border-left-width: ; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); border-collapse: collapse; width: 100%;"><thead><tr><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">afs</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">name</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px;"></th></tr></thead><tbody><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>DAYBREAK OIL &amp; GAS, INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>TRIBUS ENTERPRISES, INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr></tbody></table></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>CAMAS</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: right;"><span>1</span></td><td style="padding: 0px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><table style="border-top-color: ; border-top-style: ; border-top-width: ; border-right-color: ; border-right-style: ; border-right-width: ; border-left-color: ; border-left-style: ; border-left-width: ; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); border-collapse: collapse; width: 100%;"><thead><tr><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">afs</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">name</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px;"></th></tr></thead><tbody><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>NLIGHT, INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr></tbody></table></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>MOUNTLAKE TERRACE</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: right;"><span>1</span></td><td style="padding: 0px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><table style="border-top-color: ; border-top-style: ; border-top-width: ; border-right-color: ; border-right-style: ; border-right-width: ; border-left-color: ; border-left-style: ; border-left-width: ; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); border-collapse: collapse; width: 100%;"><thead><tr><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">afs</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">name</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px;"></th></tr></thead><tbody><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>2-ACC</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>FS BANCORP, INC.</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr></tbody></table></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>CHENEY</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: right;"><span>1</span></td><td style="padding: 0px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><table style="border-top-color: ; border-top-style: ; border-top-width: ; border-right-color: ; border-right-style: ; border-right-width: ; border-left-color: ; border-left-style: ; border-left-width: ; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); border-collapse: collapse; width: 100%;"><thead><tr><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">afs</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">name</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px;"></th></tr></thead><tbody><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>4-NON</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>CONECTISYS CORP</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr></tbody></table></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>LYNNWOOD</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: right;"><span>1</span></td><td style="padding: 0px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><table style="border-top-color: ; border-top-style: ; border-top-width: ; border-right-color: ; border-right-style: ; border-right-width: ; border-left-color: ; border-left-style: ; border-left-width: ; border-image-source: ; border-image-slice: ; border-image-width: ; border-image-outset: ; border-image-repeat: ; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); border-collapse: collapse; width: 100%;"><thead><tr><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">afs</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); text-align: left;">name</th><th style="padding: 8px; color: var(--malloy-title-color, #505050); border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px;"></th></tr></thead><tbody><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>1-LAF</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>ZUMIEZ INC</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr><tr><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>2-ACC</span></td><td style="padding: 8px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea);"><span>ZUMIEZ INC</span></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr></tbody></table></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr></tbody></table></td><td style="padding: 2px; vertical-align: top; border-bottom: 1px solid var(--malloy-border-color, #eaeaea); width: 25px; cursor: pointer;"><div class="drill-icon">
+  <style>
+    .drill-icon:hover .copy-circle {
+      fill: #eef7f9;
+    }
+
+    .drill-icon:active .copy-circle {
+      fill: #cfe9f0;
+    }
+
+    .drill-icon:hover .copy-icon,
+    .drill-icon:active .copy-icon {
+      fill: #53b2c8;
+    }
+  </style>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="none" class="copy-circle"></circle>
+        <svg x="6" y="6" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10.6667C3.63333 10.6667 3.31944 10.5361 3.05833 10.275C2.79722 10.0139 2.66667 9.7 2.66667 9.33333V1.33333C2.66667 0.966667 2.79722 0.652778 3.05833 0.391667C3.31944 0.130556 3.63333 0 4 0H10C10.3667 0 10.6806 0.130556 10.9417 0.391667C11.2028 0.652778 11.3333 0.966667 11.3333 1.33333V9.33333C11.3333 9.7 11.2028 10.0139 10.9417 10.275C10.6806 10.5361 10.3667 10.6667 10 10.6667H4ZM4 9.33333H10V1.33333H4V9.33333ZM1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667H1.33333V12H8.66667V13.3333H1.33333Z" fill="#E7E7E7" class="copy-icon"></path>
+        </svg>
+      </svg></div></td></tr></tbody></table>
